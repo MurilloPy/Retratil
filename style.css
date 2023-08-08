@@ -1,0 +1,97 @@
+ /*HTML & CSS */
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+
+  }
+  
+:root {
+
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+
+  }
+
+header{
+
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*MENU RETRATIL*/
+.hamburger{
+
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:20px;
+  left:1480px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+
+.camada{
+
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+
+}
+
+.menu{
+
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 200px;
+  height: 100%;
+  background-color: red;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  z-index: 1;
+  transition: left 0.3s ease;
+
+} 
+
+
+.menu li{
+
+margin-bottom: 10px;
+text-align: center;
+
+}
+
+.menu a{
+
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+/*MENU RETRATIL*/
+
+/*HTML & CSS */
+
+
+
+
+/*CSS & JS*/
+.menu.show-menu{
+
+  left:0;
+
+}
